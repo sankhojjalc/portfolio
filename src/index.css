@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-backgroundColor: 243 244 246;
+    --color-textColor: 0 0 0;
+    --color-hoverBackgroundColor: 203 213 225;
+  }
+}
+
+:root[data-theme="light"] {
+  --color-backgroundColor: 243 244 246;
+  --color-textColor: 0 0 0;
+  --color-hoverBackgroundColor: 203 213 225;
+}
+
+:root[data-theme="dark"] {
+  --color-backgroundColor: 64 64 64;
+  --color-textColor: 255 255 255;
+  --color-hoverBackgroundColor: 31 41 55;
+}
