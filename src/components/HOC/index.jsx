@@ -1,10 +1,12 @@
 const PageHOC = ({ pageTitle, pageName, children }) => {
   return (
-    <>
-      <div>{pageTitle}</div>
-      <div>{pageName}</div>
-      <div>{children}</div>
-    </>
+    <div className="mt-64 text-textColor">
+      <div className="text-center">
+        <div className="text-lg">{pageTitle}</div>
+        <div className="text-5xl font-bold">{pageName}</div>
+      </div>
+      <>{children}</>
+    </div>
   );
 };
 
