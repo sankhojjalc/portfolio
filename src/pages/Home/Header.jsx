@@ -1,4 +1,5 @@
 import { useState } from "react";
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 import Icon from "../../components/Icons";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
@@ -7,10 +8,11 @@ import { userName, navLinks } from "../../assets/constants";
 const NavLinks = ({ navLinks }) =>
   navLinks.map((link) => (
     <li
-      key={link}
+      key={link.name}
       className="hover:bg-hoverBackgroundColor rounded-3xl px-3 cursor-pointer"
+      onClick={()=> scrollTo(link.path)}
     >
-      {link}
+      {link.name}
     </li>
   ));
 
