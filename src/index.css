@@ -19,5 +19,5 @@
 :root[data-theme="dark"] {
   --color-backgroundColor: 64 64 64;
   --color-textColor: 255 255 255;
-  --color-hoverBackgroundColor: 31 41 55;
+  --color-hoverBackgroundColor: 255 229 180;
 }
