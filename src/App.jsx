@@ -2,6 +2,7 @@ import PageWrapper from "./components/PageWrapper";
 import Home from "./pages/Home";
 import AboutWrapper from "./pages/About";
 import ExperienceWrapper from "./pages/Experience";
+import SkillWrapper from "./pages/Skills";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Home />
       <AboutWrapper />
       <ExperienceWrapper />
+      <SkillWrapper />
     </PageWrapper>
   );
 };

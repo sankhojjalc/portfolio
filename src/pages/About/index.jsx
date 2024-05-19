@@ -4,7 +4,7 @@ import About from "./About";
 const AboutWrapper = () => {
   return (
     <div id="about">
-      <PageHOC pageTitle="Get to know More" pageName="About Me">
+      <PageHOC pageTitle="Get to know more" pageName="About Me">
         <About />
       </PageHOC>
     </div>
