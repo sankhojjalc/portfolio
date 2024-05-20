@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import AboutWrapper from "./pages/About";
 import ExperienceWrapper from "./pages/Experience";
 import SkillWrapper from "./pages/Skills";
+import ContactMe from "./pages/ContactMe";
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
       <Home />
       <AboutWrapper />
       <ExperienceWrapper />
-      <SkillWrapper />
+      <ContactMe />
+      {/* <SkillWrapper /> */}
     </PageWrapper>
   );
 };

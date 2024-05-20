@@ -1,15 +1,11 @@
 import { skills } from "./skillIconsUtil";
+import Skill from "./Skill";
+
 const SkillIcons = () => {
   return (
     <>
       {skills.map((icon) => (
-        <img
-          key={icon.altText}
-          width="50"
-          height="50"
-          src={icon.src}
-          alt={icon.altText}
-        />
+        <Skill icon={icon} key={icon.altText} />
       ))}
     </>
   );

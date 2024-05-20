@@ -7,7 +7,7 @@ export const navLinks = [
   { name: "Experience", path: "#experience" },
   { name: "Skills", path: "#skills" },
   // { name: "Projects", path: "#projects" },
-  { name: "Contacts", path: "#contacts" },
+  { name: "Contacts", path: "#contact-me" },
 ];
 export const listOfOrganizations = [
   {
@@ -27,5 +27,32 @@ export const listOfOrganizations = [
     imagePath: "/publicisSapient.png",
     jobRole: "Senior Associate Engineer",
     yearOfService: "Aug 2021 - Present",
+  },
+];
+export const contactMe = [
+  {
+    key: 1,
+    data: {
+      isImage: false,
+      iconName: "mailIcon",
+      description: "sankhojjal@gmail.com",
+    },
+  },
+  {
+    key: 2,
+    data: {
+      isImage: false,
+      iconName: "phoneIcon",
+      description: "+91-7003889627",
+    },
+  },
+  {
+    key: 3,
+    data: {
+      isImage: true,
+      src: "https://img.icons8.com/color/48/linkedin.png",
+      altText: "linkedIn-sankhojjal",
+      description: "/sankhojjalchatterjee",
+    },
   },
 ];
