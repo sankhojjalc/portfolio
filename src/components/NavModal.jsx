@@ -12,7 +12,7 @@ const NavModal = ({ show }) => {
           About
         </li>
         <li className="my-2" onClick={() => scrollTo("#experience")}>
-          Experience
+          WorkEx
         </li>
         <li className="my-2" onClick={() => scrollTo("#contact-me")}>
           Contact Me

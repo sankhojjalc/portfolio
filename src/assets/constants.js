@@ -13,22 +13,49 @@ export const navLinks = [
 ];
 export const listOfOrganizations = [
   {
+    id: 1,
     name: "Mindtree Ltd",
     imagePath: "/mindtree.png",
     jobRole: "Software Engineer",
     yearOfService: "Jan 2017 - Aug 2020",
+    tasks: [
+      "Worked as Full stack junior developer in the domain of Travel, Transportation and Hospitality.",
+    ],
+    skills: [],
   },
   {
+    id: 2,
     name: "Josh Software Pvt Ltd",
     imagePath: "/josh.png",
     jobRole: "Senior Software Developer",
     yearOfService: "Aug 2020 - Aug 2021",
+    tasks: [
+      "Developed a robust React application for a leading Indian food delivery startup",
+      "Developed live tracking of food delivery agents into the applications using WebSocket APIs. Eg: Pusher.",
+      "Developed feature for live update of food status to the customer.",
+      "Implemented pages such as for login, search, promotions, Product details page, etc.",
+      "Developed auto read SMS for mobile users which led to 33% more customer retention.",
+      "Led a small team of developers, assigning tasks to the team and discussing the best approach for given problem statements/stories.",
+      "Worked on latest HTML5 along with the semantics and CSS, typescript.",
+    ],
+    skills: [],
   },
   {
+    id: 3,
     name: "Publicis Sapient",
     imagePath: "/publicisSapient.png",
     jobRole: "Senior Associate Engineer",
     yearOfService: "Aug 2021 - Present",
+    tasks: [
+      "Developing and scalable React Applications for their E-Commerce application, which includes writing innumerable atomic components and then integrating those to make large scale components.",
+      "Integrating various Advertisement APIs into applications. Eg: Criteo, GAM, etc.",
+      "Integrating several analytics tools such as Adobe Market Cloud for getting business insights.",
+      "Integrating payment gateways such as Ingenico, Zain cash for payments on various applications.",
+      "SEO optimisation and performance of website which led to 42% increment in traffic with 37% increase on page load and several web vitals.",
+      "Developing webpage with both LTR and RTL features.",
+      "Perform in-depth and thorough code reviews of peer developers before merging into code of version control like Git.",
+    ],
+    skills: [],
   },
 ];
 export const contactMe = [
