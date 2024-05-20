@@ -2,6 +2,8 @@ export const userName = "Sankhojjal Chatterjee";
 export const greetings = "Hello, i'm";
 export const downloadCV = "Download CV";
 export const contactInfo = "Contact Info";
+export const linkedInUrl = "https://linkedin.com/in/sankhojjalchatterjee";
+export const githubUrl = "https://github.com/sankhojjalc";
 export const navLinks = [
   { name: "About", path: "#about" },
   { name: "WorkEx", path: "#experience" },
@@ -52,7 +54,7 @@ export const contactMe = [
       isImage: true,
       src: "https://img.icons8.com/color/48/linkedin.png",
       altText: "linkedIn-sankhojjal",
-      description: "/sankhojjalchatterjee",
+      description: "/ sankhojjalchatterjee",
       style: "w-8 lg:w-10 h-8 lg:h-10",
     },
   },

@@ -6,6 +6,8 @@ import {
   greetings,
   downloadCV,
   contactInfo,
+  linkedInUrl,
+  githubUrl,
 } from "../../assets/constants";
 
 const Profile = () => {
@@ -58,16 +60,20 @@ const Profile = () => {
           </div>
         </div>
         <div className="flex justify-center mt-5 gap-5">
-          <img
-            src="/github.png"
-            alt={userName + " github"}
-            className="w-10 h-10 bg-white rounded-full"
-          />
-          <img
-            src="/linkedin-dark.png"
-            alt={userName + " linkedIn"}
-            className="w-10 h-10 bg-white rounded-full"
-          />
+          <a href={githubUrl}>
+            <img
+              src="/github.png"
+              alt={userName + " github"}
+              className="w-10 h-10 bg-white rounded-full cursor-pointer"
+            />
+          </a>
+          <a href={linkedInUrl}>
+            <img
+              src="/linkedin-dark.png"
+              alt={userName + " linkedIn"}
+              className="w-10 h-10 bg-white rounded-full cursor-pointer"
+            />
+          </a>
         </div>
       </main>
     </section>
