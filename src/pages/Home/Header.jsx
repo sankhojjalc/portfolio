@@ -9,7 +9,7 @@ const NavLinks = ({ navLinks }) =>
   navLinks.map((link) => (
     <li
       key={link.name}
-      className="hover:bg-hoverBackgroundColor rounded-3xl px-3 cursor-pointer"
+      className="hover:bg-hoverBackgroundColor hover:text-black rounded-3xl px-3 cursor-pointer"
       onClick={()=> scrollTo(link.path)}
     >
       {link.name}

@@ -4,7 +4,7 @@ export const downloadCV = "Download CV";
 export const contactInfo = "Contact Info";
 export const navLinks = [
   { name: "About", path: "#about" },
-  { name: "Experience", path: "#experience" },
+  { name: "WorkEx", path: "#experience" },
   { name: "Skills", path: "#skills" },
   // { name: "Projects", path: "#projects" },
   { name: "Contacts", path: "#contact-me" },

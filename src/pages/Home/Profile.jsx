@@ -27,7 +27,14 @@ const Profile = () => {
         <div className="text-l font-medium md:mt-3 md:text-3xl">
           <Typewriter
             options={{
-              strings: ["Software Engineer", "Frontend Developer", "React JS"],
+              strings: [
+                "Senior Software Engineer",
+                "FullStack Developer",
+                "Frontend Developer",
+                "React JS Developer",
+                "Next Js Developer",
+                "Node Js Developer",
+              ],
               autoStart: true,
               loop: true,
             }}
@@ -35,7 +42,11 @@ const Profile = () => {
         </div>
         <div className="flex  mt-4 xl:mt-10 justify-center gap-5 lg:gap-10">
           <div className="text-nowrap pl-3 lg:pl-0 pr-3 lg:pr-0 h-10 w-42 lg:w-32 pt-1.5 border-2 rounded-3xl hover:border-hoverBackgroundColor cursor-pointer">
-            <a href="https://sankhojjal-chatterjee-resume.tiiny.site" target="_blank" download>
+            <a
+              href="https://sankhojjal-chatterjee-resume.tiiny.site"
+              target="_blank"
+              download
+            >
               {downloadCV}
             </a>
           </div>
@@ -50,12 +61,12 @@ const Profile = () => {
           <img
             src="/github.png"
             alt={userName + " github"}
-            className="w-10 h-10"
+            className="w-10 h-10 bg-white rounded-full"
           />
           <img
             src="/linkedin-dark.png"
             alt={userName + " linkedIn"}
-            className="w-10 h-10"
+            className="w-10 h-10 bg-white rounded-full"
           />
         </div>
       </main>

@@ -4,7 +4,7 @@ import Experience from "./Experience";
 const ExperienceWrapper = () => {
   return (
     <div id="experience">
-      <PageHOC pageTitle="Explore my" pageName="Experience">
+      <PageHOC pageTitle="Explore my" pageName="Work Experience">
         <Experience />
       </PageHOC>
     </div>

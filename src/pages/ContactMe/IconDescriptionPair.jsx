@@ -29,7 +29,7 @@ const RenderIconDescription = (props) => {
 
 const IconDescriptionPair = () => {
   return (
-    <div className="border md:flex md:justify-around lg:justify-center h-auto md:h-20 items-center mt-14 lg:mt-40  md:gap-5 lg:gap-16">
+    <div className="border-2 md:flex md:justify-around lg:justify-center h-auto md:h-20 items-center mt-14 lg:mt-40  md:gap-5 lg:gap-16">
       {contactMe.map((item) => (
         <RenderIconDescription key={item.key} {...item.data} />
       ))}
