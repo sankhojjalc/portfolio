@@ -53,6 +53,7 @@ export const contactMe = [
       src: "https://img.icons8.com/color/48/linkedin.png",
       altText: "linkedIn-sankhojjal",
       description: "/sankhojjalchatterjee",
+      style: "w-8 lg:w-10 h-8 lg:h-10",
     },
   },
 ];

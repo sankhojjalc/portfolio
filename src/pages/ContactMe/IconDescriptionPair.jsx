@@ -1,5 +1,5 @@
 import Icon from "../../components/Icons";
-import Skills from "../../components/SkillsIcon/Skill";
+import Image from "../../components/Image";
 import { contactMe } from "../../assets/constants";
 
 const RenderIconDescription = (props) => {
@@ -7,22 +7,21 @@ const RenderIconDescription = (props) => {
     <div className="flex gap-1 my-2 justify-center">
       {props?.isImage ? (
         <a href="https://www.linkedin.com/in/sankhojjalchatterjee/">
-          <Skills icon={props} />
+          <Image data={props} />
         </a>
       ) : (
         <Icon iconName={props.iconName} />
       )}
       {props?.isImage ? (
-        <a
-          href="https://www.linkedin.com/in/sankhojjalchatterjee/"
-          className=""
-        >
-          <span className="xl:text-2xl hover:underline">
+        <a href="https://www.linkedin.com/in/sankhojjalchatterjee/">
+          <span className="xl:text-2xl hover:underline underline-offset-8">
             {props.description}
           </span>
         </a>
       ) : (
-        <span className="xl:text-2xl">{props.description}</span>
+        <span className="xl:text-2xl hover:underline underline-offset-8">
+          {props.description}
+        </span>
       )}
     </div>
   );

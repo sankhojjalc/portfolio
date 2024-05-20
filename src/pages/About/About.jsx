@@ -1,4 +1,5 @@
 import Cards from "./Cards";
+import { getDateDifference } from "../../utils";
 const About = () => {
   return (
     <>
@@ -7,7 +8,7 @@ const About = () => {
           <Cards
             iconName="workIcon"
             cardTitle="Experience"
-            textOne="7.6 Years"
+            textOne={`${getDateDifference()} Years`}
             textTwo="Fullstack Developer"
           />
           <Cards
@@ -27,8 +28,8 @@ const About = () => {
         </div>
         <div className="mt-4 tracking-wider">
           I'm committed to continuous learning, whether it's new coding
-          languages, library, frameworks, or system design. My core principles include
-          innovation, efficiency, and collaboration.
+          languages, library, frameworks, or system design. My core principles
+          include innovation, efficiency, and collaboration.
         </div>
         <div className="mt-4 tracking-wider">
           In my free time, I enjoy contributing to open-source projects and

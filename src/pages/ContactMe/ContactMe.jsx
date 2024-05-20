@@ -1,16 +1,18 @@
 import IconDescriptionPair from "./IconDescriptionPair";
-import Skill from "../Skills/Skill";
+import MarqueeIcon from "../../components/Marquee/MarqueIcon";
+
 const ContactMe = () => {
   const getCurrentYear = new Date().getFullYear();
 
   return (
     <>
       <IconDescriptionPair />
-      <div id="skills" className="mt-10 mb-2 [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] overflow-hidden">
-        <Skill />
+      <div className="hidden lg:block" id="skills">
+        <MarqueeIcon />
       </div>
       <div className="text-center mt-10">
-        Copyright © {getCurrentYear} Sankhojjal Chatterjee. All Rights Reserved.
+        Copyright © {getCurrentYear} <b>Sankhojjal Chatterjee.</b> All Rights
+        Reserved.
       </div>
     </>
   );
