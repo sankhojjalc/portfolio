@@ -20,6 +20,10 @@ export const skills = [
     altText: "amazon-web-services",
   },
   {
+    src: "https://img.icons8.com/fluency/48/nextjs.png",
+    altText: "next-js",
+  },
+  {
     src: "https://img.icons8.com/color/48/html-5--v1.png",
     altText: "html5",
   },
