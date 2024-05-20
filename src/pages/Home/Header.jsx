@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header className="h-15 flex text-textColor justify-between">
-      <div className="md:text-3xl lg:w-5/12">{userName}</div>
+      <div className="text-2xl md:text-3xl lg:w-5/12">{userName}</div>
       <nav className="hidden lg:block xl:w-5/12">
         <ul className="flex text-2xl justify-between leading-10">
           <NavLinks navLinks={navLinks} />
