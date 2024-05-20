@@ -12,6 +12,7 @@ export default {
       animation: {
         marquee: "marquee 10s linear infinite",
         marquee2: "marquee2 10s linear infinite",
+        modal: "modal 0.15s ease-in-out",
       },
       keyframes: {
         marquee: {
@@ -21,6 +22,10 @@ export default {
         marquee2: {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0%)" },
+        },
+        modal: {
+          "0%": { transform: "scale(0)" },
+          "100%": { transform: "scale(1)" },
         },
       },
     },

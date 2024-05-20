@@ -2,6 +2,7 @@ import { useState } from "react";
 import scrollTo from "gatsby-plugin-smoothscroll";
 
 import Icon from "../../components/Icons";
+import NavModal from "../../components/NavModal";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 import { userName, navLinks } from "../../assets/constants";
 
@@ -10,7 +11,7 @@ const NavLinks = ({ navLinks }) =>
     <li
       key={link.name}
       className="hover:bg-hoverBackgroundColor hover:text-black rounded-3xl px-3 cursor-pointer"
-      onClick={()=> scrollTo(link.path)}
+      onClick={() => scrollTo(link.path)}
     >
       {link.name}
     </li>
@@ -28,13 +29,18 @@ const Header = () => {
           <NavLinks navLinks={navLinks} />
         </ul>
       </nav>
-      <div className="lg:hidden" onClick={() => setToggleIcon((prev) => !prev)}>
+      <div
+        className="relative lg:hidden"
+        onClick={() => setToggleIcon((prev) => !prev)}
+      >
+        <NavModal show={toggleIcon} />
         {toggleIcon ? (
           <Icon iconName="closeIcon" />
         ) : (
           <Icon iconName="hamburgerIcon" />
         )}
       </div>
+
       <div
         className="hidden lg:block lg:pt-2 cursor-pointer"
         onClick={toggleTheme}
