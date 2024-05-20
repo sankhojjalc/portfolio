@@ -4,6 +4,7 @@ const Image = ({ data }) => (
     src={data.src}
     alt={data.altText}
     className={data.style}
+    loading="lazy"
   />
 );
 

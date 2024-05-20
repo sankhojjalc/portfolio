@@ -1,4 +1,4 @@
-export const style = "w-12 h-12 xl:mx-2";
+export const style = "w14 h-14 xl:mx-2";
 
 export const skills = [
   {
