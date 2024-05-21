@@ -42,7 +42,7 @@ const CompanyDetailsModal = ({
               </span>
             </div>
 
-            <span className="text-lg underline underline-offset-2">
+            <span className="text-lg underline underline-offset-4">
               ({yearOfService})
             </span>
             <div>
