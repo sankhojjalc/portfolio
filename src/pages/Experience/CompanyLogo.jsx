@@ -12,7 +12,7 @@ const CompanyLogo = ({
   return (
     <>
       <div className="group h-52 md:h-40 lg:h-60 w-52 md:w-40 lg:w-60 rounded-full text-center mx-auto my-20">
-        <div className="relative h-full w-full rounded-full shadow-2xl duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+        <div className="relative h-full w-full rounded-full shadow-2xl shadow-black duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           <img
             className="h-full w-full rounded-full object-scale-down px-2 border-[3.5px] cursor-pointer"
             src={imagePath}
