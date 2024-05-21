@@ -1,5 +1,5 @@
 export const userName = "Sankhojjal Chatterjee";
-export const greetings = "Hello, i'm";
+export const greetings = "Hello, I'm";
 export const downloadCV = "Download CV";
 export const contactInfo = "Contact Info";
 export const linkedInUrl = "https://linkedin.com/in/sankhojjalchatterjee";
@@ -33,7 +33,7 @@ export const listOfOrganizations = [
       "Developed a robust React application for a leading Indian food delivery startup",
       "Developed live tracking of food delivery agents into the applications using WebSocket APIs. Eg: Pusher.",
       "Developed feature for live update of food status to the customer.",
-      "Implemented pages such as for login, search, promotions, Product details page, etc.",
+      "Implemented pages such as for login, search, promotions, product details page, etc.",
       "Developed auto read SMS for mobile users which led to 33% more customer retention.",
       "Led a small team of developers, assigning tasks to the team and discussing the best approach for given problem statements/stories.",
       "Worked on latest HTML5 along with the semantics and CSS, typescript.",
@@ -51,9 +51,9 @@ export const listOfOrganizations = [
       "Integrating various Advertisement APIs into applications. Eg: Criteo, GAM, etc.",
       "Integrating several analytics tools such as Adobe Market Cloud for getting business insights.",
       "Integrating payment gateways such as Ingenico, Zain cash for payments on various applications.",
-      "SEO optimisation and performance of website which led to 42% increment in traffic with 37% increase on page load and several web vitals.",
-      "Developing webpage with both LTR and RTL features.",
-      "Perform in-depth and thorough code reviews of peer developers before merging into code of version control like Git.",
+      "SEO optimization and performance of website which led to 42% increment in traffic with 37% increase on page load and several web vitals.",
+      "Developing webpage with both LTR and RTL and i18n features.",
+      "Performing in-depth and thorough code reviews of peer developers before merging into code of version control like Git.",
     ],
     skills: [],
   },

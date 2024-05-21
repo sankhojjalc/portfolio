@@ -19,8 +19,8 @@ const About = () => {
           />
         </div>
       </div>
-      <div className="mt-10 lg:mt-28 lg:text-lg text-justify">
-        <div className="lg:tracking-wider">
+      <div className="mt-10 lg:mt-28 lg:text-xl min-[320px]:text-center min-[425px]:text-justify">
+        <div className="tracking-wider">
           Hello, I'm Sankhojjal Chatterjee, a Senior Software Engineer with over
           eight years of experience, specializing in full-stack development with
           a focus on ReactJS and NextJS. I am passionate about building
