@@ -1,5 +1,6 @@
 import Typewriter from "typewriter-effect";
 import scrollTo from "gatsby-plugin-smoothscroll";
+import { gaEvent } from "../../utils";
 
 import {
   userName,
@@ -8,6 +9,7 @@ import {
   contactInfo,
   linkedInUrl,
   githubUrl,
+  gaCategories,
 } from "../../assets/constants";
 
 const Profile = () => {
@@ -43,7 +45,16 @@ const Profile = () => {
           />
         </div>
         <div className="flex  mt-4 xl:mt-10 justify-center gap-5 lg:gap-10">
-          <div className="text-nowrap pl-3 lg:pl-0 pr-3 lg:pr-0 h-10 w-42 lg:w-32 pt-1.5 border-2 rounded-3xl hover:border-hoverBackgroundColor cursor-pointer">
+          <div
+            className="text-nowrap pl-3 lg:pl-0 pr-3 lg:pr-0 h-10 w-42 lg:w-32 pt-1.5 border-2 rounded-3xl hover:border-hoverBackgroundColor cursor-pointer"
+            onClick={() => {
+              gaEvent({
+                category: gaCategories.viewResume,
+                action: "Clicked Resume Button",
+                label: { downloadCV },
+              });
+            }}
+          >
             <a
               href="https://sankhojjal-chatterjee-resume.tiiny.site"
               target="_blank"

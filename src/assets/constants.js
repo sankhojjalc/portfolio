@@ -1,15 +1,46 @@
+const DESKTOP = "DESKTOP";
+const MOBILE = "MOBILE";
 export const userName = "Sankhojjal Chatterjee";
 export const greetings = "Hello, I'm";
 export const downloadCV = "Download CV";
 export const contactInfo = "Contact Info";
 export const linkedInUrl = "https://linkedin.com/in/sankhojjalchatterjee";
 export const githubUrl = "https://github.com/sankhojjalc";
+export const gaCategories = {
+  navigation: "NAVIGATION",
+  viewResume: "VIEW_RESUME",
+  viewContactInfo: "ViEW_CONTACT",
+  viewGithub: "VIEW_GITHUB",
+  viewLinkedIn: "VIEW_LINKEDIN",
+  interactedWithCompanyIcon: "INTERACTED_WITH_COMPANY_ICON",
+  companyModalViewed: "OPENED_COMPANY_MODAL",
+};
 export const navLinks = [
-  { name: "About", path: "#about" },
-  { name: "WorkEx", path: "#experience" },
-  { name: "Skills", path: "#skills" },
+  {
+    name: "About",
+    path: "#about",
+    category: gaCategories.navigation,
+    action: gaCategories.navigation + DESKTOP,
+  },
+  {
+    name: "WorkEx",
+    path: "#experience",
+    category: gaCategories.navigation,
+    action: gaCategories.navigation + DESKTOP,
+  },
+  {
+    name: "Skills",
+    path: "#skills",
+    category: gaCategories.navigation,
+    action: gaCategories.navigation + DESKTOP,
+  },
+  {
+    name: "Contacts",
+    path: "#contact-me",
+    category: gaCategories.navigation,
+    action: gaCategories.navigation + DESKTOP,
+  },
   // { name: "Projects", path: "#projects" },
-  { name: "Contacts", path: "#contact-me" },
 ];
 export const listOfOrganizations = [
   {

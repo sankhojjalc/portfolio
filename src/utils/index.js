@@ -1,3 +1,5 @@
+import ReactGA4 from "react-ga4";
+
 export const getDateDifference = () => {
   const startDate = new Date("2017-01-08");
   const todaysDate = new Date();
@@ -13,4 +15,16 @@ export const getDateDifference = () => {
   let yearMonthDifference = `${years}.${months}`;
 
   return yearMonthDifference;
+};
+
+export const gaEvent = ({
+  category,
+  action,
+  label,
+}) => {
+  ReactGA4.event({
+    category,
+    action,
+    label,
+  });
 };

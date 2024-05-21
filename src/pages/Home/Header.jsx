@@ -5,13 +5,21 @@ import Icon from "../../components/Icons";
 import NavModal from "../../components/NavModal";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 import { userName, navLinks } from "../../assets/constants";
+import { gaEvent } from "../../utils";
 
 const NavLinks = ({ navLinks }) =>
   navLinks.map((link) => (
     <li
       key={link.name}
       className="hover:bg-hoverBackgroundColor hover:text-black rounded-3xl px-3 cursor-pointer"
-      onClick={() => scrollTo(link.path)}
+      onClick={() => {
+        gaEvent({
+          category: link.category,
+          action: link.action,
+          label: link.name,
+        });
+        scrollTo(link.path);
+      }}
     >
       {link.name}
     </li>
