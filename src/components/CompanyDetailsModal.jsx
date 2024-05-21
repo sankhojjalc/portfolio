@@ -19,7 +19,7 @@ const CompanyDetailsModal = ({
   }, [isModalOpen]);
 
   return (
-    <div className={`fixed inset-48 z-10 ${isModalOpen ? "block" : "hidden"}`}>
+    <div className={`fixed inset-10 lg:inset-48 z-10 ${isModalOpen ? "block" : "hidden"}`}>
       <div className="backdrop fixed inset-0 bg-textColor bg-opacity-70 transition-opacity duration-300">
         <div className="fixed inset-0 filter blur-sm"></div>
       </div>
@@ -30,9 +30,9 @@ const CompanyDetailsModal = ({
         >
           <div className="p-5">
             <div className="flex justify-between">
-              <div>
-                <span className="text-3xl">{name}</span>
-                <span className="mr-4 italic text-lg pl-3">({jobRole})</span>
+              <div className="md:flex gap-2">
+                <p className="text-3xl">{name}</p>
+                <p className="mr-4 italic lg:text-lg pt-2">({jobRole})</p>
               </div>
               <span
                 className="cursor-pointer hover:text-gray-500"
@@ -50,7 +50,7 @@ const CompanyDetailsModal = ({
                 {tasks.map((item, index) => (
                   <li
                     key={index}
-                    className="list-disc my-2 tracking-wider ml-3"
+                    className="list-disc my-2 text-sm md:text-lg ml-3 text-justify"
                   >
                     {item}
                   </li>
