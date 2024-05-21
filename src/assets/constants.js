@@ -63,16 +63,17 @@ export const contactMe = [
     key: 1,
     data: {
       isImage: false,
-      iconName: "mailIcon",
-      description: "sankhojjal@gmail.com",
+      isTelephone: true,
+      iconName: "phoneIcon",
+      description: "+917003889627",
     },
   },
   {
     key: 2,
     data: {
       isImage: false,
-      iconName: "phoneIcon",
-      description: "+91-7003889627",
+      iconName: "mailIcon",
+      description: "sankhojjal@gmail.com",
     },
   },
   {
@@ -81,7 +82,7 @@ export const contactMe = [
       isImage: true,
       src: "https://img.icons8.com/color/48/linkedin.png",
       altText: "linkedIn-sankhojjal",
-      description: "/ sankhojjalchatterjee",
+      description: "/sankhojjalchatterjee",
       style: "w-8 lg:w-10 h-8 lg:h-10",
     },
   },
