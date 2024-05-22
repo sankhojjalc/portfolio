@@ -10,6 +10,7 @@ import {
   linkedInUrl,
   githubUrl,
   gaCategories,
+  designations,
 } from "../../assets/constants";
 
 const Profile = () => {
@@ -31,14 +32,7 @@ const Profile = () => {
         <div className="text-l font-medium md:mt-3 md:text-3xl">
           <Typewriter
             options={{
-              strings: [
-                "Senior Software Engineer",
-                "FullStack Developer",
-                "Frontend Developer",
-                "React JS Developer",
-                "Next Js Developer",
-                "Node Js Developer",
-              ],
+              strings: designations,
               autoStart: true,
               loop: true,
             }}

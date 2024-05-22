@@ -7,6 +7,14 @@ export const contactInfo = "Contact Info";
 export const linkedInUrl = "https://linkedin.com/in/sankhojjalchatterjee";
 export const githubUrl = "https://github.com/sankhojjalc";
 export const gaTagId = "G-DJZE892FRP";
+export const designations = [
+  "Senior Software Engineer",
+  "Full-Stack Developer",
+  "Frontend Developer",
+  "ReactJS Developer",
+  "NextJs Developer",
+  "NodeJs Developer",
+];
 export const gaCategories = {
   navigation: "NAVIGATION",
   viewResume: "VIEW_RESUME",
