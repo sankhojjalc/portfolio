@@ -6,6 +6,7 @@ export const downloadCV = "Download CV";
 export const contactInfo = "Contact Info";
 export const linkedInUrl = "https://linkedin.com/in/sankhojjalchatterjee";
 export const githubUrl = "https://github.com/sankhojjalc";
+export const gaTagId = "G-DJZE892FRP";
 export const gaCategories = {
   navigation: "NAVIGATION",
   viewResume: "VIEW_RESUME",

@@ -7,7 +7,7 @@ const ContactMe = () => {
   return (
     <>
       <IconDescriptionPair />
-      <div className="hidden lg:block" id="skills">
+      <div className="my-6" id="skills">
         <MarqueeIcon />
       </div>
       <div className="text-center mt-10">

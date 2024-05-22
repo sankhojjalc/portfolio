@@ -6,9 +6,10 @@ import Home from "./pages/Home";
 import AboutWrapper from "./pages/About";
 import ExperienceWrapper from "./pages/Experience";
 import ContactMe from "./pages/ContactMe";
+import { gaTagId } from "./assets/constants";
 
 const App = () => {
-  ReactGA.initialize("G-7MG0FNPFNF");
+  ReactGA.initialize(gaTagId);
 
   useEffect(() => {
     ReactGA.send({

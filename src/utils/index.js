@@ -1,4 +1,5 @@
-import ReactGA4 from "react-ga4";
+import ReactGA from "react-ga4";
+import { gaTagId } from "../assets/constants";
 
 export const getDateDifference = () => {
   const startDate = new Date("2017-01-08");
@@ -17,12 +18,9 @@ export const getDateDifference = () => {
   return yearMonthDifference;
 };
 
-export const gaEvent = ({
-  category,
-  action,
-  label,
-}) => {
-  ReactGA4.event({
+export const gaEvent = ({ category, action, label }) => {
+  ReactGA.initialize(gaTagId);
+  ReactGA.event({
     category,
     action,
     label,

@@ -19,7 +19,7 @@ const CompanyDetailsModal = ({
   }, [isModalOpen]);
 
   return (
-    <div className={`fixed inset-10 lg:inset-36 z-10 ${isModalOpen ? "block" : "hidden"} shadow-2xl`}>
+    <div className={`fixed inset-10 lg:inset-36 z-10 ${isModalOpen ? "block" : "hidden"} shadow-2xl cursor-default`}>
       <div className="backdrop fixed inset-0 bg-textColor bg-opacity-70 transition-opacity duration-300">
         <div className="fixed inset-0 filter blur-sm"></div>
       </div>
