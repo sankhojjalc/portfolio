@@ -12,7 +12,7 @@ const LightDarkMode = () => {
         onChange={toggleTheme}
         className="sr-only"
       />
-      <Icon iconName="moonIcon" fillStyle />
+      <Icon iconName="moonIconMobile" fillStyle />
       <span
         className={`slider mx-4 flex h-6 w-[40px] items-center rounded-full p-1 duration-200 ${
           theme === "light" ? "bg-[#CCCCCE]" : "bg-[#212b36]"

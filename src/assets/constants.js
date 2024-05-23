@@ -24,7 +24,7 @@ export const gaCategories = {
   interactedWithCompanyIcon: "INTERACTED_WITH_COMPANY_ICON",
   companyModalViewed: "OPENED_COMPANY_MODAL",
 };
-export const navLinks = [
+export const navLinksDesktop = [
   {
     name: "About",
     path: "#about",
@@ -51,6 +51,36 @@ export const navLinks = [
   },
   // { name: "Projects", path: "#projects" },
 ];
+export const navLinksMobile = [
+  {
+    name: "About",
+    id: 1,
+    path: "#about",
+    category: gaCategories.navigation,
+    action: gaCategories.navigation + MOBILE,
+  },
+  {
+    name: "WorkEx",
+    id: 2,
+    path: "#experience",
+    category: gaCategories.navigation,
+    action: gaCategories.navigation + MOBILE,
+  },
+  {
+    id: 3,
+    name: "Skills",
+    path: "#skills",
+    category: gaCategories.navigation,
+    action: gaCategories.navigation + MOBILE,
+  },
+  {
+    id: 4,
+    name: "Contact Me",
+    path: "#contact-me",
+    category: gaCategories.navigation,
+    action: gaCategories.navigation + MOBILE,
+  },
+];
 export const listOfOrganizations = [
   {
     id: 1,
@@ -70,12 +100,12 @@ export const listOfOrganizations = [
     jobRole: "Senior Software Developer",
     yearOfService: "Aug 2020 - Aug 2021",
     tasks: [
-      "Developed a robust React application for a leading Indian food delivery startup",
+      "Developed a robust React application for a leading Indian food delivery startup.",
       "Developed live tracking of food delivery agents into the applications using WebSocket APIs. Eg: Pusher.",
       "Developed feature for live update of food status to the customer.",
       "Implemented pages such as for login, search, promotions, product details page, etc.",
       "Developed auto read SMS for mobile users which led to 33% more customer retention.",
-      "Led a small team of developers, assigning tasks to the team and discussing the best approach for given problem statements/stories.",
+      "Led a small team of developers, assigning tasks to the team and discussing the best approach for given problem statements and stories.",
       "Worked on latest HTML5 along with the semantics and CSS, typescript.",
     ],
     skills: [],

@@ -1,22 +1,31 @@
 import scrollTo from "gatsby-plugin-smoothscroll";
 import LightDarkMode from "../components/LightDarkMode";
+import { navLinksMobile } from "../assets/constants";
+import { gaEvent } from "../utils";
 
 const NavModal = ({ show }) => {
   return (
     <dialog
       open={show}
-      className="absolute bg-backgroundColor left-auto top-8 md:top-12 w-36 md:w-40 text-lg z-10 shadow-textColor shadow-2xl rounded-xl h-40"
+      className="absolute bg-backgroundColor left-auto top-8 md:top-12 w-36 md:w-40 text-lg z-10 shadow-textColor shadow-2xl rounded-xl h-44"
     >
       <ul className="pl-6 text-textColor">
-        <li className="my-2" onClick={() => scrollTo("#about")}>
-          About
-        </li>
-        <li className="my-2" onClick={() => scrollTo("#experience")}>
-          WorkEx
-        </li>
-        <li className="my-2" onClick={() => scrollTo("#contact-me")}>
-          Contact Me
-        </li>
+        {navLinksMobile.map((link) => (
+          <li
+            key={link.id}
+            className="my-[4px]"
+            onClick={() => {
+              gaEvent({
+                category: link.category,
+                action: link.action,
+                label: link.name,
+              });
+              scrollTo(link.path);
+            }}
+          >
+            {link.name}
+          </li>
+        ))}
       </ul>
       <div className="flex justify-center my-4">
         <LightDarkMode />

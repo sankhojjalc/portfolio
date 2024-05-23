@@ -1,20 +1,39 @@
 import Icon from "../../components/Icons";
 import Image from "../../components/Image";
-import { contactMe, linkedInUrl } from "../../assets/constants";
+import { contactMe, linkedInUrl, gaCategories } from "../../assets/constants";
+import { gaEvent } from "../../utils";
 
 const RenderIconDescription = (props) => {
   return (
     <div className="flex gap-1 my-3 justify-center">
       {props?.isImage ? (
-        <a href={linkedInUrl}>
+        <a
+          href={linkedInUrl}
+          onClick={() =>
+            gaEvent({
+              category: gaCategories.viewLinkedIn,
+              action: gaCategories.viewLinkedin,
+              label: gaCategories.viewLinkedIn,
+            })
+          }
+        >
           <Image data={props} />
         </a>
       ) : (
         <Icon iconName={props.iconName} />
       )}
       {props?.isImage ? (
-        <a href={linkedInUrl}>
-          <span className="xl:text-2xl hover:underline underline-offset-8">
+        <a href={linkedInUrl} target="_blank">
+          <span
+            className="xl:text-2xl hover:underline underline-offset-8"
+            onClick={() =>
+              gaEvent({
+                category: gaCategories.viewLinkedIn,
+                action: gaCategories.viewLinkedin,
+                label: gaCategories.viewLinkedIn,
+              })
+            }
+          >
             {props.description}
           </span>
         </a>

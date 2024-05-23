@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 
 import Icon from "../components/Icons";
+import { gaEvent } from "../utils/index";
+import { gaCategories } from "../assets/constants";
 
 const CompanyDetailsModal = ({
   name,
@@ -12,6 +14,11 @@ const CompanyDetailsModal = ({
 }) => {
   useEffect(() => {
     if (isModalOpen) {
+      gaEvent({
+        category: gaCategories.companyModalViewed,
+        action: gaCategories.companyModalViewed,
+        label: name,
+      });
       document.body.classList.add("overflow-hidden");
     } else {
       document.body.classList.remove("overflow-hidden");
@@ -19,7 +26,11 @@ const CompanyDetailsModal = ({
   }, [isModalOpen]);
 
   return (
-    <div className={`fixed inset-10 lg:inset-36 z-10 ${isModalOpen ? "block" : "hidden"} shadow-2xl cursor-default`}>
+    <div
+      className={`fixed inset-10 lg:inset-36 z-10 ${
+        isModalOpen ? "block" : "hidden"
+      } shadow-2xl cursor-default`}
+    >
       <div className="backdrop fixed inset-0 bg-textColor bg-opacity-70 transition-opacity duration-300">
         <div className="fixed inset-0 filter blur-sm"></div>
       </div>
@@ -30,9 +41,11 @@ const CompanyDetailsModal = ({
         >
           <div className="p-5">
             <div className="flex justify-between">
-              <div className="md:flex gap-2">
-                <p className="text-3xl">{name}</p>
-                <p className="mr-4 italic lg:text-lg pt-2">({jobRole})</p>
+              <div className="md:flex gap-2 max-[320px]:mr-4">
+                <p className="text-xl md:text-3xl">{name}</p>
+                <p className="min-[425px]:mr-4 italic lg:text-lg min-[425px]:pt-2 w-max">
+                  ({jobRole})
+                </p>
               </div>
               <span
                 className="cursor-pointer hover:text-gray-500"
@@ -50,7 +63,7 @@ const CompanyDetailsModal = ({
                 {tasks.map((item, index) => (
                   <li
                     key={index}
-                    className="list-disc my-2 text-sm md:text-lg ml-3 text-justify"
+                    className="list-disc min-[375px]:my-2 text-sm md:text-lg ml-3 text-justify"
                   >
                     {item}
                   </li>

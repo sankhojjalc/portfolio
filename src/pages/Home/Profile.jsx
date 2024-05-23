@@ -45,7 +45,7 @@ const Profile = () => {
               gaEvent({
                 category: gaCategories.viewResume,
                 action: "Clicked Resume Button",
-                label: { downloadCV },
+                label: downloadCV,
               });
             }}
           >
@@ -65,20 +65,40 @@ const Profile = () => {
           </div>
         </div>
         <div className="flex justify-center mt-5 gap-5">
-          <a href={githubUrl}>
-            <img
-              src="/github.png"
-              alt={userName + " github"}
-              className="w-10 h-10 bg-white rounded-full cursor-pointer"
-            />
-          </a>
-          <a href={linkedInUrl}>
-            <img
-              src="/linkedin-dark.png"
-              alt={userName + " linkedIn"}
-              className="w-10 h-10 bg-white rounded-full cursor-pointer"
-            />
-          </a>
+          <div
+            onClick={() =>
+              gaEvent({
+                category: gaCategories.viewGithub,
+                action: gaCategories.viewGithub,
+                label: gaCategories.viewGithub,
+              })
+            }
+          >
+            <a href={githubUrl} target="_blank">
+              <img
+                src="/github.png"
+                alt={userName + " github"}
+                className="w-10 h-10 bg-white rounded-full cursor-pointer"
+              />
+            </a>
+          </div>
+          <div
+            onClick={() =>
+              gaEvent({
+                category: gaCategories.viewLinkedIn,
+                action: gaCategories.viewLinkedin,
+                label: gaCategories.viewLinkedIn,
+              })
+            }
+          >
+            <a href={linkedInUrl} target="_blank">
+              <img
+                src="/linkedin-dark.png"
+                alt={userName + " linkedIn"}
+                className="w-10 h-10 bg-white rounded-full cursor-pointer"
+              />
+            </a>
+          </div>
         </div>
       </main>
     </section>

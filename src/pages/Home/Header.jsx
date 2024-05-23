@@ -4,7 +4,7 @@ import scrollTo from "gatsby-plugin-smoothscroll";
 import Icon from "../../components/Icons";
 import NavModal from "../../components/NavModal";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
-import { userName, navLinks } from "../../assets/constants";
+import { userName, navLinksDesktop } from "../../assets/constants";
 import { gaEvent } from "../../utils";
 
 const NavLinks = ({ navLinks }) =>
@@ -34,7 +34,7 @@ const Header = () => {
       <div className="text-2xl md:text-3xl lg:w-5/12">{userName}</div>
       <nav className="hidden lg:block xl:w-5/12">
         <ul className="flex text-2xl justify-between leading-10">
-          <NavLinks navLinks={navLinks} />
+          <NavLinks navLinks={navLinksDesktop} />
         </ul>
       </nav>
       <div
