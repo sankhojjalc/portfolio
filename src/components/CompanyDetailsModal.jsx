@@ -29,7 +29,7 @@ const CompanyDetailsModal = ({
     <div
       className={`fixed max-[320px]:inset-2 inset-5 lg:inset-36 z-10 ${
         isModalOpen ? "block" : "hidden"
-      } shadow-2xl cursor-default`}
+      } cursor-default`}
     >
       <div className="backdrop fixed inset-0 bg-textColor bg-opacity-70 transition-opacity duration-300">
         <div className="fixed inset-0 filter blur-sm"></div>
@@ -43,9 +43,7 @@ const CompanyDetailsModal = ({
             <div className="flex justify-between">
               <div className="md:flex gap-2 max-[320px]:mr-4">
                 <p className="text-xl md:text-3xl">{name}</p>
-                <p className="mr-4 italic lg:text-lg pt-2">
-                  ({jobRole})
-                </p>
+                <p className="mr-4 italic lg:text-lg pt-2">({jobRole})</p>
               </div>
               <span
                 className="cursor-pointer hover:text-gray-500"
@@ -59,11 +57,11 @@ const CompanyDetailsModal = ({
               ({yearOfService})
             </span>
             <div>
-              <ul className="my-6">
+              <ul className="my-6 ">
                 {tasks.map((item, index) => (
                   <li
                     key={index}
-                    className="list-disc text-sm md:text-lg ml-3 text-justify"
+                    className="text-sm md:text-lg text-justify"
                   >
                     {item}
                   </li>

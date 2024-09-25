@@ -1,6 +1,7 @@
 import Typewriter from "typewriter-effect";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import { gaEvent } from "../../utils";
+import BlurryLoadingImage from "../../components/BlurryLoadingImage";
 
 import {
   userName,
@@ -16,14 +17,15 @@ import {
 const Profile = () => {
   return (
     <section className="mt-24 xl:mt-36 lg:flex justify-center gap-32">
-      <picture>
-        <img
-          src="/IMG_20181224_204539_Bokeh.jpg"
+      <div className="w-60 h-60 md:w-64 md:h-64 xl:w-96 xl:h-96 m-auto">
+        <BlurryLoadingImage
+          preview="/IMG_20181224_204539_Bokeh-compressed.jpg"
+          image="/IMG_20181224_204539_Bokeh.jpg"
           alt="Sankhojjal Chatterjee"
-          className="rounded-full w-30 h-30 md:w-64 md:h-64 xl:w-96 xl:h-96 m-auto"
+          divStyleClass="rounded-full w-30 h-30 md:w-64 md:h-64 xl:w-96 xl:h-96 m-auto"
+          imageStyleClass="rounded-full w-30 h-30 md:w-64 md:h-64 xl:w-96 xl:h-96 m-auto"
         />
-      </picture>
-
+      </div>
       <main className="text-textColor text-center mt-8 xl:mt-12">
         <p className="md:font-semibold md:text-xl">{greetings}</p>
         <p className="font-bold text-xl md:text-5xl md:font-semibold">
