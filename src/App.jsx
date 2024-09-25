@@ -1,11 +1,13 @@
-import { useEffect } from "react";
+import { useEffect, lazy, Suspense } from "react";
 import ReactGA from "react-ga4";
 
 import PageWrapper from "./components/PageWrapper";
 import Home from "./pages/Home";
-import AboutWrapper from "./pages/About";
-import ExperienceWrapper from "./pages/Experience";
-import ContactMe from "./pages/ContactMe";
+
+const AboutWrapper = lazy(() => import("./pages/About"));
+const ExperienceWrapper = lazy(() => import("./pages/Experience"));
+const ContactMe = lazy(() => import("./pages/ContactMe"));
+
 import { gaTagId } from "./assets/constants";
 
 const App = () => {
@@ -22,9 +24,11 @@ const App = () => {
   return (
     <PageWrapper>
       <Home />
-      <AboutWrapper />
-      <ExperienceWrapper />
-      <ContactMe />
+      <Suspense fallback={<></>}>
+        <AboutWrapper />
+        <ExperienceWrapper />
+        <ContactMe />
+      </Suspense>
     </PageWrapper>
   );
 };
