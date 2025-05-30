@@ -59,10 +59,7 @@ const CompanyDetailsModal = ({
             <div>
               <ul className="my-6 ">
                 {tasks.map((item, index) => (
-                  <li
-                    key={index}
-                    className="text-sm md:text-lg text-justify"
-                  >
+                  <li key={index} className="text-sm md:text-lg lg:mb-2">
                     {item}
                   </li>
                 ))}

@@ -21,10 +21,12 @@ const CompanyLogo = ({
   };
   return (
     <>
-      <div className="group h-52 md:h-44 lg:h-60 w-52 md:w-44 lg:w-60 rounded-full text-center mx-auto my-20">
+      <div className="group h-52 md:h-28 lg:h-44 xl:h-60 w-52 md:w-28 lg:w-44 xl:w-60 rounded-full text-center mx-auto my-20">
         <div className="relative h-full w-full rounded-full shadow-2xl shadow-black duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           <img
-            className="h-full w-full rounded-full object-scale-down px-2 border-[3.5px] cursor-pointer"
+            className={`h-full w-full object-scale-down px-2 cursor-pointer ${
+              name === "Sber Bank" ? "scale-[0.7]" : ""
+            }`}
             src={imagePath}
             alt={name}
             onMouseOver={() => handleMouseOver(name)}

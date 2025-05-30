@@ -22,7 +22,7 @@ const Company = () => {
   ));
 
   return (
-    <div className="md:flex justify-around md:my-32 md:gap-10 xl:gap-20 relative">
+    <div className="md:flex justify-around item-center md:my-32 md:gap-2 xl:gap-20 relative">
       {renderCompanyLogo}
     </div>
   );
