@@ -1,29 +1,34 @@
-/**
- *
- * Added this extra component for future.
- *  When company will increase, add a carousal
- * in this component
- */
 import { useState } from "react";
 
+import Carousel from "../../components/Carousel";
+import CompanyDetailsModal from "../../components/CompanyDetailsModal";
 import CompanyLogo from "./CompanyLogo";
 import { listOfOrganizations } from "../../assets/constants";
 
 const Company = () => {
   const [companyDetailsKey, setCompanyDetailsKey] = useState(null);
 
-  const renderCompanyLogo = listOfOrganizations.map((item) => (
-    <CompanyLogo
-      key={item.id}
-      companyDetailsKey={companyDetailsKey}
-      setCompanyDetailsKey={setCompanyDetailsKey}
-      {...item}
-    />
-  ));
+  const activeCompany = listOfOrganizations.find(
+    (company) => company.id === companyDetailsKey
+  );
 
   return (
-    <div className="md:flex justify-around item-center md:my-32 md:gap-2 xl:gap-20 relative">
-      {renderCompanyLogo}
+    <div className="relative my-14 md:my-24">
+      <Carousel
+        ariaLabel="Work experience"
+        autoPlayDelay={5000}
+        paused={Boolean(activeCompany)}
+      >
+        {listOfOrganizations.map((item) => (
+          <CompanyLogo key={item.id} {...item} onOpen={setCompanyDetailsKey} />
+        ))}
+      </Carousel>
+
+      <CompanyDetailsModal
+        {...activeCompany}
+        isModalOpen={Boolean(activeCompany)}
+        setCompanyDetailsKey={setCompanyDetailsKey}
+      />
     </div>
   );
 };

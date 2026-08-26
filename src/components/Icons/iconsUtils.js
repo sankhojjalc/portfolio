@@ -17,6 +17,9 @@ const mailIcon =
 const phoneIcon =
   "M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3";
 
+const chevronLeftIcon = "M15.75 19.5 8.25 12l7.5-7.5";
+const chevronRightIcon = "m8.25 4.5 7.5 7.5-7.5 7.5";
+
 const closeIconStyle = "w-6 h-6 md:w-10 md:h-10";
 const hamburgerIconStyle = "w-6 h-6 md:w-10 md:h-10";
 const collegeIconStyle = "w-6 h-6";
@@ -27,6 +30,8 @@ const workIconStyle = "w-7 h-7 block mx-auto";
 const academicsIconStyle = "w-7 h-7 block mx-auto";
 const mailIconStyle = "w-6 h-6 lg:w-8 lg:h-8";
 const phoneIconStyle = "w-6 h-6 lg:w-8 lg:h-8";
+const chevronLeftIconStyle = "w-5 h-5 md:w-6 md:h-6";
+const chevronRightIconStyle = "w-5 h-5 md:w-6 md:h-6";
 
 export const iconPath = {
   closeIcon,
@@ -39,6 +44,8 @@ export const iconPath = {
   academicsIcon,
   mailIcon,
   phoneIcon,
+  chevronLeftIcon,
+  chevronRightIcon,
 };
 
 export const iconStyles = {
@@ -52,4 +59,6 @@ export const iconStyles = {
   academicsIconStyle,
   mailIconStyle,
   phoneIconStyle,
+  chevronLeftIconStyle,
+  chevronRightIconStyle,
 };

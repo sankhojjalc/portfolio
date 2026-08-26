@@ -56,7 +56,7 @@ const RenderIconDescription = (props) => {
 
 const IconDescriptionPair = () => {
   return (
-    <div className="border-2 rounded-3xl md:flex md:justify-around lg:justify-center h-auto md:h-20 items-center mt-14 lg:mt-40 md:gap-5 lg:gap-16">
+    <div className="border-2 rounded-3xl md:flex md:justify-around lg:justify-evenly h-auto md:h-20 items-center mt-14 lg:mt-40 md:gap-5 max-w-6xl mx-auto">
       {contactMe.map((item) => (
         <RenderIconDescription key={item.key} {...item.data} />
       ))}

@@ -5,7 +5,12 @@ import { skills, style } from "./marqueeIcons";
 const MarqueeIcon = () => {
   return (
     <div className="[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-      <Marquee gradient={false} pauseOnHover={true} speed={100}>
+      {/*
+        autoFill repeats the icon set enough times to exceed the container.
+        Without it the track is a fixed two sets wide (~2816px), which stops
+        covering the viewport past ~3.5K and leaves gaps between repetitions.
+      */}
+      <Marquee gradient={false} pauseOnHover={true} speed={100} autoFill>
         {skills.map((skill) => (
           <Image data={{ ...skill, style }} key={skill.altText} />
         ))}

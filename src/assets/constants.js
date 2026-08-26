@@ -95,7 +95,6 @@ export const listOfOrganizations = [
       "✅️Led initiatives to implement automated testing strategies, including unit, component, and end-to-end tests, ensuring comprehensive test coverage above 85%.",
       "✅️Integrated accessibility features to accommodate differently-abled users, enhancing functionality and reducing operating costs.",
     ],
-    skills: [],
   },
   {
     id: 2,
@@ -112,7 +111,6 @@ export const listOfOrganizations = [
       "✅️Customized CSS frameworks such as Chakra UI, delivering responsive and accessible web applications.",
       "✅️Worked on latest HTML5 along with the semantics and CSS, typescript.",
     ],
-    skills: [],
   },
   {
     id: 3,
@@ -128,12 +126,12 @@ export const listOfOrganizations = [
       "✅️Gathered business requirements directly from stakeholders, conducted sprint planning, broke down tasks, assigned tasks, tracked project status, reviewed code, and designed modules.",
       "✅️Developed the application using a mobile-first approach, ensured accessibility with React PWA, and optimized, while maintaining web vitals for both mobile and desktop devices.",
     ],
-    skills: [],
   },
   {
     id: 4,
     name: "Sber Bank",
     imagePath: "/sber.png",
+    logoScale: "scale-[0.7]",
     jobRole: "Software Engineer Senior",
     yearOfService: "Jan 2025 - Present",
     tasks: [
@@ -142,7 +140,6 @@ export const listOfOrganizations = [
       "✅️Actively involved in system design discussions and architecture reviews, suggesting best practices and introducing performance monitoring tools for proactive debugging and stability.",
       "✅️Implementing adaptive UI components using a mobile-first approach to ensure seamless usability across varied screen sizes, resulting in improved accessibility and a measurable boost in core Web Vitals scores.",
     ],
-    skills: [],
   },
 ];
 export const contactMe = [
