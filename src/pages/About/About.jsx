@@ -27,6 +27,13 @@ const About = () => {
           innovative projects that serve a broad audience.
         </div>
         <div className="mt-4 tracking-wider">
+          I currently work as a Software Engineer Senior at Sber Bank, building
+          a secure cross-border internet banking application on a micro-frontend
+          ReactJS architecture. Before that I was at Publicis Sapient, Josh
+          Software and Mindtree, working across e-commerce, food delivery and
+          enterprise platforms.
+        </div>
+        <div className="mt-4 tracking-wider">
           I'm committed to continuous learning, whether it's new coding
           languages, library, frameworks, or system design. My core principles
           include innovation, efficiency, and collaboration.

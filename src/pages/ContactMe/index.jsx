@@ -3,11 +3,15 @@ import ContactMe from "./ContactMe";
 
 const ContactMeWrapper = () => {
   return (
-    <div id="contact-me">
-      <PageHOC pageTitle="Get in Touch" pageName="Contact Me">
+    <section id="contact-me" aria-labelledby="contact-heading">
+      <PageHOC
+        pageTitle="Get in Touch"
+        pageName="Contact Me"
+        headingId="contact-heading"
+      >
         <ContactMe />
       </PageHOC>
-    </div>
+    </section>
   );
 };
 export default ContactMeWrapper;

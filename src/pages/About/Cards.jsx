@@ -5,7 +5,7 @@ const Cards = ({ iconName, cardTitle, textOne, textTwo }) => {
     <div className="md:w-[350px] h-40 border-[3px] hover:border-hoverBackgroundColor rounded-3xl">
       <div className="mx-auto w-fit text-center py-7">
         <Icons iconName={iconName} />
-        <p className="font-bold text-lg tracking-wider">{cardTitle}</p>
+        <h3 className="font-bold text-lg tracking-wider">{cardTitle}</h3>
         <p>{textOne}</p>
         <p className="tracking-wider">{textTwo}</p>
       </div>

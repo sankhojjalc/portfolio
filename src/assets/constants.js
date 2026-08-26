@@ -4,8 +4,13 @@ export const userName = "Sankhojjal Chatterjee";
 export const greetings = "Hello, I'm";
 export const downloadCV = "Download CV";
 export const contactInfo = "Contact Info";
-export const linkedInUrl = "https://linkedin.com/in/sankhojjalchatterjee";
+// Canonical origin. Change this in ONE place if a custom domain is added,
+// then update index.html / sitemap.xml / robots.txt to match.
+export const siteUrl = "https://sankhojjal-dev.web.app";
+export const linkedInUrl =
+  "https://www.linkedin.com/in/sankhojjalchatterjee";
 export const githubUrl = "https://github.com/sankhojjalc";
+export const resumeUrl = "https://sankhojjal-chatterjee-resume.tiiny.site";
 export const gaTagId = "G-DJZE892FRP";
 export const designations = [
   "Senior Software Engineer",

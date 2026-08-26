@@ -1,0 +1,8 @@
+# https://sankhojjal-dev.web.app/robots.txt
+User-agent: *
+Allow: /
+
+# Block nothing - this is a single-page portfolio and every asset
+# (JS/CSS) must be crawlable for Google to render the page.
+
+Sitemap: https://sankhojjal-dev.web.app/sitemap.xml

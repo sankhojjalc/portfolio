@@ -4,12 +4,15 @@ const BlurryLoadingImage = ({
   preview,
   image,
   alt,
+  width,
+  height,
+  eager = false,
   imageStyleClass,
   divStyleClass,
   bgColor = "transparent",
 }) => {
   const [currentImage, setCurrentImage] = useState(preview);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(preview !== image);
 
   const fetchImage = (src) => {
     const loadingImage = new Image();
@@ -21,8 +24,9 @@ const BlurryLoadingImage = ({
   };
 
   useEffect(() => {
+    if (preview === image) return;
     fetchImage(image);
-  }, []);
+  }, [preview, image]);
 
   return (
     <div className={divStyleClass} style={{ overflow: "hidden" }}>
@@ -35,6 +39,12 @@ const BlurryLoadingImage = ({
         }}
         src={currentImage}
         alt={alt}
+        width={width}
+        height={height}
+        // The hero portrait is the LCP element - it must not be lazy-loaded.
+        loading={eager ? "eager" : "lazy"}
+        fetchPriority={eager ? "high" : "auto"}
+        decoding={eager ? "sync" : "async"}
         className={imageStyleClass}
       />
     </div>

@@ -9,6 +9,8 @@ const RenderIconDescription = (props) => {
       {props?.isImage ? (
         <a
           href={linkedInUrl}
+          target="_blank"
+          rel="me noopener noreferrer"
           onClick={() =>
             gaEvent({
               category: gaCategories.viewLinkedIn,
@@ -23,7 +25,7 @@ const RenderIconDescription = (props) => {
         <Icon iconName={props.iconName} />
       )}
       {props?.isImage ? (
-        <a href={linkedInUrl} target="_blank">
+        <a href={linkedInUrl} target="_blank" rel="me noopener noreferrer">
           <span
             className="xl:text-2xl hover:underline underline-offset-8"
             onClick={() =>

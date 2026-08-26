@@ -10,27 +10,39 @@ import {
   contactInfo,
   linkedInUrl,
   githubUrl,
+  resumeUrl,
   gaCategories,
   designations,
 } from "../../assets/constants";
 
 const Profile = () => {
   return (
-    <section className="mt-24 xl:mt-36 lg:flex justify-center gap-32">
+    <section
+      id="home"
+      aria-label="Introduction"
+      className="mt-24 xl:mt-36 lg:flex justify-center gap-32"
+    >
       <div className="w-60 h-60 md:w-64 md:h-64 xl:w-96 xl:h-96 m-auto">
         <BlurryLoadingImage
           preview="/IMG_20181224_204539_Bokeh-compressed.jpg"
-          image="/IMG_20181224_204539_Bokeh.jpg"
-          alt="Sankhojjal Chatterjee"
+          image="/IMG_20181224_204539_Bokeh-compressed.jpg"
+          alt="Sankhojjal Chatterjee, Senior Software Engineer"
+          width={850}
+          height={850}
+          eager
           divStyleClass="rounded-full w-30 h-30 md:w-64 md:h-64 xl:w-96 xl:h-96 m-auto"
           imageStyleClass="rounded-full w-30 h-30 md:w-64 md:h-64 xl:w-96 xl:h-96 m-auto"
         />
       </div>
-      <main className="text-textColor text-center mt-8 xl:mt-12">
+      <div className="text-textColor text-center mt-8 xl:mt-12">
         <p className="md:font-semibold md:text-xl">{greetings}</p>
-        <p className="font-bold text-xl md:text-5xl md:font-semibold">
+        {/*
+          The only <h1> on the page. A search for the name has to find it in
+          the most important heading slot, not in a generic <p>.
+        */}
+        <h1 className="font-bold text-xl md:text-5xl md:font-semibold">
           {userName}
-        </p>
+        </h1>
         <div className="text-l font-medium md:mt-3 md:text-3xl">
           <Typewriter
             options={{
@@ -52,8 +64,9 @@ const Profile = () => {
             }}
           >
             <a
-              href="https://sankhojjal-chatterjee-resume.tiiny.site"
+              href={resumeUrl}
               target="_blank"
+              rel="noopener noreferrer"
               download
             >
               {downloadCV}
@@ -76,10 +89,21 @@ const Profile = () => {
               })
             }
           >
-            <a href={githubUrl} target="_blank">
+            {/*
+              rel="me" marks these as the same person's other profiles, which is
+              the signal that ties this site to the LinkedIn/GitHub identities.
+            */}
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="me noopener noreferrer"
+              title={userName + " on GitHub"}
+            >
               <img
                 src="/github.png"
-                alt={userName + " github"}
+                alt={userName + " on GitHub"}
+                width="40"
+                height="40"
                 className="w-10 h-10 bg-white rounded-full cursor-pointer"
               />
             </a>
@@ -93,16 +117,23 @@ const Profile = () => {
               })
             }
           >
-            <a href={linkedInUrl} target="_blank">
+            <a
+              href={linkedInUrl}
+              target="_blank"
+              rel="me noopener noreferrer"
+              title={userName + " on LinkedIn"}
+            >
               <img
                 src="/linkedin-dark.png"
-                alt={userName + " linkedIn"}
+                alt={userName + " on LinkedIn"}
+                width="40"
+                height="40"
                 className="w-10 h-10 bg-white rounded-full cursor-pointer"
               />
             </a>
           </div>
         </div>
-      </main>
+      </div>
     </section>
   );
 };

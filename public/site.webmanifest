@@ -1,0 +1,25 @@
+{
+  "name": "Sankhojjal Chatterjee - Senior Software Engineer",
+  "short_name": "Sankhojjal",
+  "description": "Portfolio of Sankhojjal Chatterjee, Senior Software Engineer specialising in ReactJS and NextJS.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/sankhojjal.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/IMG_20181224_204539_Bokeh-compressed.jpg",
+      "sizes": "850x850",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

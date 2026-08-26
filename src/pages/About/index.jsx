@@ -3,11 +3,15 @@ import About from "./About";
 
 const AboutWrapper = () => {
   return (
-    <div id="about">
-      <PageHOC pageTitle="Get to know more" pageName="About Me">
+    <section id="about" aria-labelledby="about-heading">
+      <PageHOC
+        pageTitle="Get to know more"
+        pageName="About Me"
+        headingId="about-heading"
+      >
         <About />
       </PageHOC>
-    </div>
+    </section>
   );
 };
 export default AboutWrapper;

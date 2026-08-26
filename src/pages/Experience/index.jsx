@@ -3,11 +3,15 @@ import Experience from "./Experience";
 
 const ExperienceWrapper = () => {
   return (
-    <div id="experience">
-      <PageHOC pageTitle="Explore my" pageName="Work Experience">
+    <section id="experience" aria-labelledby="experience-heading">
+      <PageHOC
+        pageTitle="Explore my"
+        pageName="Work Experience"
+        headingId="experience-heading"
+      >
         <Experience />
       </PageHOC>
-    </div>
+    </section>
   );
 };
 

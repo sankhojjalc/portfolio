@@ -31,11 +31,14 @@ const CompanyLogo = ({
           <img
             className={`h-full w-full object-scale-down px-2 [backface-visibility:hidden] ${logoScale}`}
             src={imagePath}
-            alt={name}
+            alt={`${name} logo`}
+            width="240"
+            height="240"
+            loading="lazy"
           />
           <div className="absolute inset-0 h-full w-full rounded-full bg-textColor/80 px-4 lg:px-6 text-center text-backgroundColor [transform:rotateY(180deg)] [backface-visibility:hidden]">
             <div className="flex min-h-full flex-col items-center justify-center">
-              <h3 className="text-base lg:text-xl lg:font-bold">{jobRole}</h3>
+              <p className="text-base lg:text-xl lg:font-bold">{jobRole}</p>
               <p className="text-sm lg:text-base mt-2 lg:mt-3">
                 {yearOfService}
               </p>
@@ -46,7 +49,7 @@ const CompanyLogo = ({
           </div>
         </div>
       </button>
-      <p className="mt-5 text-xl">{name}</p>
+      <h3 className="mt-5 text-xl">{name}</h3>
     </div>
   );
 };
