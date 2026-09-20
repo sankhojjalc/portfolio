@@ -1,18 +1,26 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+const config = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./content/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
-      body: {
-        blur: "filter blur(2px)",
-      },
       colors: {
-        backgroundColor: "rgb(var(--color-backgroundColor) / <alpha-value>)",
-        textColor: "rgb(var(--color-textColor) / <alpha-value>)",
-        hoverBackgroundColor:
-          "rgb(var(--color-hoverBackgroundColor)/<alpha-value>)",
+        primary: "rgb(var(--bg-primary) / <alpha-value>)",
+        secondary: "rgb(var(--bg-secondary) / <alpha-value>)",
+        "text-primary": "rgb(var(--text-primary) / <alpha-value>)",
+        "text-secondary": "rgb(var(--text-secondary) / <alpha-value>)",
+        "accent-orange": "var(--accent-orange)",
+        "accent-teal": "var(--accent-teal)",
+      },
+      borderColor: {
+        glass: "var(--glass-border)",
       },
     },
   },
   plugins: [],
 };
+
+export default config;

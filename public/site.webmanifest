@@ -1,7 +1,7 @@
 {
-  "name": "Sankhojjal Chatterjee - Senior Software Engineer",
+  "name": "Sankhojjal Chatterjee - AI Engineer",
   "short_name": "Sankhojjal",
-  "description": "Portfolio of Sankhojjal Chatterjee, Senior Software Engineer specialising in ReactJS and NextJS.",
+  "description": "Portfolio of Sankhojjal Chatterjee, AI Engineer building LLM applications, RAG pipelines and AI agents.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -10,15 +10,15 @@
   "lang": "en",
   "icons": [
     {
-      "src": "/sankhojjal.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/IMG_20181224_204539_Bokeh-compressed.jpg",
-      "sizes": "850x850",
-      "type": "image/jpeg",
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
       "purpose": "any"
     }
   ]
