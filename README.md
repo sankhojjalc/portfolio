@@ -2,43 +2,50 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sankhojjalc&color=brightgreen&base=1234&style=for-the-badge" alt="sankhojjal chatterjee" /> </p>
 
-Passionate about crafting immersive user experiences and building robust web applications, I specialize in front-end technologies like ReactJS and Next.js. With a keen interest in full-stack development, I thrive on leveraging the MERN (MongoDB, Express.js, ReactJS, Node.js) stack to create dynamic and scalable solutions.
+**AI Engineer** building LLM applications, RAG pipelines and AI agents, on top of a production full-stack foundation in React, Next.js and TypeScript and 9+ years of software engineering. I care as much about latency, security, testing and user experience as I do about model quality.
+
+Currently a **Senior Software Engineer at Sber Bank**, based in Bangalore, India.
+
+## 🤖 What I Work On
+
+- **AI-powered Compliance Copilot:** designing a Cross-Border Payments & Compliance Copilot for internal banking operations, combining Generative AI, RAG and agentic workflows (LangGraph) to assist teams with transaction investigations, regulatory-policy discovery, document analysis and case resolution.
+- **Production RAG for banking:** built a hybrid RAG pipeline (dense embeddings, BM25 keyword retrieval, metadata filtering and reranking) across banking policies, regulatory documents and internal knowledge sources, with human-in-the-loop review and Keycloak/RBAC-gated tool access for sensitive actions.
+- **AI guardrails & observability:** shipped structured Pydantic schemas, prompt-injection protection, context isolation and audit logging, and track retrieval relevance, answer faithfulness, tool-call accuracy and latency in production.
+- **AI-assisted code review:** architected an internal LLM-powered PR review system that flags common issues before human review, cutting average PR turnaround time by ~40%.
+
+Earlier, at Publicis Sapient, I built an internal RAG-powered knowledge assistant for a UK e-commerce platform serving 20M+ monthly active users, covering document ingestion, chunking, embedding-based retrieval and prompt design.
 
 ## 🚀 Technologies & Tools
 
-- **Front-end:** ReactJS, Next.js, HTML5, CSS3, JavaScript, TypeScript, Tailwind
-- **Back-end:** Node.js, Express.js
-- **Databases:** MongoDB, MySQL, Cassandra, Redis
-- **System Design:** RESTful APIs, Microservices Architecture, Scalability, Performance Optimization
+| Area             | Skills                                                                                                                                                         |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **AI & LLMs**    | RAG, AI agents, agentic workflows, prompt engineering, tool calling, LLM APIs, human-in-the-loop workflows, evals & guardrails                                 |
+| **AI stack**     | Python, FastAPI, LangGraph, hybrid search (dense embeddings + BM25), reranking, Pydantic, Keycloak / RBAC, PostgreSQL                                          |
+| **Full-stack**   | React, Next.js, TypeScript, JavaScript, Node.js, Express.js, GraphQL, REST APIs, MongoDB, Tailwind CSS                                                         |
+| **Engineering**  | System design, tech leadership, Jest & RTL, CI/CD, web performance, accessibility, PWA, SEO                                                                    |
+| **Data & cloud** | MySQL, Cassandra, Redis, AWS, Firebase                                                                                                                         |
 
 ## 💡 Currently Exploring
 
-Fascinated by the endless possibilities of data-driven insights, I'm diving into the world of Data Science using Python. From data wrangling to machine learning algorithms, I'm enthusiastic about expanding my skills and contributing to impactful projects.
+Deepening evaluation and observability practices for agentic systems in production — retrieval relevance, answer faithfulness, tool-call accuracy — and scaling guardrail patterns for LLMs in regulated environments.
 
 ## 📫 Let's Connect!
 
 - **GitHub :** [sankhojjalc](https://github.com/sankhojjalc)
 - **LinkedIn :** [sankhojjalchatterjee](https://www.linkedin.com/in/sankhojjalchatterjee/)
-- **Portfolio:** [sankhojjalchatterjee](http://sankhojjal-dev.web.app/)
+- **Portfolio:** [sankhojjal-dev.web.app](https://sankhojjal-dev.web.app/)
 
-Feel free to reach out if you're interested in collaborating on exciting projects or simply want to chat about tech and innovation. Let's create something amazing together! ✨
+Feel free to reach out if you're interested in collaborating on AI products or simply want to chat about LLMs, RAG and agents. Let's build something great together! ✨
 
-## **</>** Languages and Tools
+## 🧩 About This Repository
 
-<p align="left">
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/>
-<img src="https://img.icons8.com/ios/50/000000/express-js.png" alt="express" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
-<img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/>
-<img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/>
-<img src="https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg" alt="graphql" width="40" height="40"/>
-<img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
-</p>
+This repo is the source of my portfolio: a statically exported **Next.js 16** site (App Router, TypeScript, Tailwind CSS, Framer Motion, `next-themes`) hosted on **Firebase Hosting** and deployed with **GitHub Actions**.
+
+**Quick start** (Node 22, see `.nvmrc`):
+
+```bash
+yarn install
+yarn dev        # http://localhost:3000
+yarn check      # lint + typecheck + tests
+yarn build      # static export to out/
+```

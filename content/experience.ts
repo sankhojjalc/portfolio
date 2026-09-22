@@ -13,13 +13,15 @@ export const organizations: Organization[] = [
     jobRole: "Software Engineer Senior",
     yearOfService: "Jan 2025 - Present",
     tasks: [
-      "Developing AI-powered capabilities for a secure internet banking application supporting cross-border transactions between India and Russia, including a RAG-powered chatbot for customer and operational queries with sub-2-second response targets and integration into a React-based micro-frontend architecture.",
-      "Designing a multi-agent compliance and fraud-triage system where a supervisor agent routes cases to specialised agents for KYC document verification, transaction-risk analysis, fraud assessment, and regulatory-policy retrieval, with human-in-the-loop approvals and end-to-end auditability.",
-      "Leading development of GigaOCR, a multimodal document-intelligence solution for extracting and structuring information from scanned documents, images, handwritten forms, and invoices using Hugging Face Transformers, olmOCR, vLLM, and Qwen3-VL.",
-      "Building and optimising LLM and multimodal inference pipelines, focusing on prompt engineering, structured extraction, response latency, model serving, output validation, and integration with downstream banking workflows.",
-      "Integrating AI services into customer-facing banking interfaces using React, building reusable UI components for chatbot interactions, document processing, agent status flows, and human-review workflows while maintaining security and usability standards."
-
-
+      "Designed and developed an AI - powered Cross - Border Payments & Compliance Copilot for internal banking operations, combining Generative AI, Retrieval- Augmented Generation, and agentic workflows to assist teams with transaction investigations, regulatory - policy discovery, document analysis, and case resolution.",
+      "Architected Python / FastAPI - based AI services and LangGraph workflows integrating LLMs with internal banking systems through controlled tool calling, enabling agents to retrieve transaction information, customer / KYC context, supporting documents, and operational data during payment investigations.",
+      "Designed a production - grade RAG architecture using dense embeddings, BM25-based keyword retrieval, metadata filtering, hybrid search, and reranking across banking policies, regulatory documents, operational procedures, and internal knowledge sources to generate grounded responses with supporting evidence.",
+      "Implemented agent state management and human -in -the - loop workflows  allowing investigation processes to pause for review and approval before executing sensitive actions while maintaining workflow state across multiple reasoning and tool - execution steps.",
+      "Designed secure AI integration patterns by separating LLM reasoning from deterministic authorization  enforcing Keycloak / RBAC policies before accessing customer or transaction data and restricting agents to explicitly authorized tools and resources.",
+      "Implemented AI guardrails including structured Pydantic schemas, tool - level permission enforcement, prompt - injection protection, context isolation, output validation, and audit logging to support secure usage of LLMs within a regulated banking environment.",
+      "Established evaluation and observability practices for AI workflows covering retrieval relevance, answer faithfulness, tool - call accuracy, workflow completion, latency, token consumption, failure rates, and human escalation patterns.",
+      "Architected an AI - powered Pull Request review system using the organization's internal LLM platform to identify common coding issues and recommend baseline performance improvements before human review, reducing average PR review turnaround time by approximately 40%.",
+      "Collaborated with banking, compliance, security, backend, and platform teams to integrate AI capabilities into the existing cross - border Internet Banking ecosystem while maintaining enterprise security and operational controls."
     ],
   },
   {
@@ -28,11 +30,14 @@ export const organizations: Organization[] = [
     jobRole: "Senior Associate Engineer",
     yearOfService: "Aug 2021 - Dec 2024",
     tasks: [
-      "Led end-to-end delivery of scalable, config-driven React applications for a UK e-commerce client, owning requirements, sprint planning, frontend architecture, module design, task delegation, code reviews, and integration of AI/data-driven capabilities.",
-      "Designed and integrated API-driven intelligence layers by connecting financial analytics and business data services with the e-commerce application, transforming raw backend data into meaningful KPIs, trends, and actionable insights through interactive dashboards and frontend visualizations for business owners and leadership.",
-      "Built reusable frontend components and integration workflows for intelligent e-commerce experiences, enabling the application to consume analytics and AI-ready services while maintaining a scalable, modular architecture.",
-      "Optimized SEO, rendering, and application performance, contributing to a 42% increase in traffic and 37% faster page loads, while maintaining healthy Core Web Vitals across mobile and desktop.",
-      "Delivered a mobile-first, accessible React PWA and improved product reliability through performance improvements, data-driven fixes, and automated unit testing using Jest and React Testing Library."
+      "Led development of scalable, configuration - driven applications for one of the UK's largest e-commerce platforms, combining React.js/TypeScript frontend systems with Python-based backend services supporting high-volume customer and product experiences serving 20M+ monthly active users.",
+      "Designed and developed backend APIs and integration services using Python, FastAPI, PostgreSQL, and REST, supporting frontend applications and integrations with downstream product, catalogue, content, and enterprise services.",
+      "Contributed to early Generative AI initiatives by developing an internal knowledge assistant using Retrieval- Augmented Generation, enabling teams to query product documentation, operational knowledge, FAQs, and support content using natural - language questions.",
+      "Worked on document ingestion, chunking, embedding - based retrieval, prompt design, and LLM integration for the knowledge assistant while evaluating approaches for improving retrieval relevance and reducing unsupported model responses.",
+      "Led development of Server - Side Rendered React applications and introduced reusable, configuration - driven UI architectures to support large - scale e - commerce experiences.",
+      "Spearheaded transformation of the application into a Progressive Web Application, enabling offline capability, improved responsiveness, and a native - like experience across device categories.",
+      "Improved application performance through Webpack bundle analysis, code splitting, caching, and Critical Rendering Path optimization, contributing to approximately 37 % improvement in page - load performance.",
+      "Strengthened software quality through comprehensive unit and integration testing using Jest and React Testing Library, improving defect detection while incorporating developer - assistance tools such as GitHub Copilot into engineering workflows."
     ],
   },
   {

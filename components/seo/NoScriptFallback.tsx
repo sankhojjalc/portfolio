@@ -14,9 +14,6 @@ export function NoScriptFallback() {
             </a>
           </p>
           <p>
-            <strong>Phone:</strong> {site.phoneDisplay}
-          </p>
-          <p>
             <a href={site.linkedInUrl} className="hover:underline">
               LinkedIn Profile
             </a>

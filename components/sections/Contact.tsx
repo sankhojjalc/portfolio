@@ -1,17 +1,16 @@
 "use client";
 
-import { ArrowRight, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowRight, Linkedin, Mail, MapPin } from "lucide-react";
 import { gaEvent } from "@/lib/analytics/gaEvent";
 import { contactMethods, type ContactTone } from "@/content/contact";
 import { site } from "@/content/site";
 import { Section } from "@/components/ui/Section";
 import { SocialLinks } from "@/components/ui/SocialLinks";
 
-const icons = { email: Mail, phone: Phone, linkedin: Linkedin } as const;
+const icons = { email: Mail, linkedin: Linkedin } as const;
 
 const toneText: Record<ContactTone, string> = {
   orange: "text-accent-orange",
-  teal: "text-accent-teal",
   blue: "text-blue-700 [[data-theme=dark]_&]:text-blue-400",
 };
 
@@ -23,7 +22,7 @@ export function Contact() {
       subtitle="Got a project in mind or just want to chat? I'm always open to discussing new opportunities and creative ideas."
       tinted
     >
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
         {contactMethods.map((method) => {
           const Icon = icons[method.id];
           const tone = toneText[method.tone];

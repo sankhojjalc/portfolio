@@ -2,6 +2,7 @@
 
 import { ArrowDown, Download } from "lucide-react";
 import { gaEvent } from "@/lib/analytics/gaEvent";
+import { useHasMounted } from "@/lib/hooks/useHasMounted";
 import { useTypewriter } from "@/lib/hooks/useTypewriter";
 import { gaCategories } from "@/content/ga-categories";
 import { isSectionEnabled } from "@/content/sections";
@@ -12,6 +13,10 @@ import { SocialLinks } from "@/components/ui/SocialLinks";
 export function Hero() {
   const { displayText, isDone } = useTypewriter(site.tagline);
   const workHref = isSectionEnabled("projects") ? "#projects" : "#experience";
+
+  // Kept out of the static HTML so crawlers/scrapers that don't execute JS
+  // never see the resume URL in page source; real visitors get it instantly on hydration.
+  const resumeReady = useHasMounted();
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 py-20 relative overflow-hidden">
@@ -49,15 +54,20 @@ export function Hero() {
             <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
           </a>
           <a
-            href={site.resumePath}
-            download={site.resumeFileName}
-            onClick={() =>
+            href={resumeReady ? site.resumePath : "#"}
+            download={resumeReady ? site.resumeFileName : undefined}
+            rel="nofollow noopener noreferrer"
+            onClick={(e) => {
+              if (!resumeReady) {
+                e.preventDefault();
+                return;
+              }
               gaEvent({
                 category: gaCategories.viewResume,
                 action: "Resume Downloaded",
                 label: "Download CV",
-              })
-            }
+              });
+            }}
             className="px-8 py-3 glass hover:bg-white/10 font-semibold rounded-full transition-all duration-300 flex items-center justify-center gap-2"
           >
             <Download className="w-4 h-4" />

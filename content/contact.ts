@@ -1,10 +1,10 @@
 import { gaCategories } from "./ga-categories";
 import { site } from "./site";
 
-export type ContactTone = "orange" | "teal" | "blue";
+export type ContactTone = "orange" | "blue";
 
 interface ContactMethod {
-  id: "email" | "phone" | "linkedin";
+  id: "email" | "linkedin";
   title: string;
   value: string;
   cta: string;
@@ -22,15 +22,6 @@ export const contactMethods: ContactMethod[] = [
     href: `mailto:${site.email}`,
     tone: "orange",
     ga: { category: gaCategories.viewContactInfo, action: "Contact Method Clicked", label: "Email" },
-  },
-  {
-    id: "phone",
-    title: "Call Me",
-    value: site.phoneDisplay,
-    cta: "Call Now",
-    href: `tel:${site.phone}`,
-    tone: "teal",
-    ga: { category: gaCategories.viewContactInfo, action: "Contact Method Clicked", label: "Phone" },
   },
   {
     id: "linkedin",

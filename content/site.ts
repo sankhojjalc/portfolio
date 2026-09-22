@@ -14,8 +14,6 @@ export const site = {
   twitterHandle: "@sankhojjalc",
 
   email: "sankhojjal@gmail.com",
-  phone: "+917003889627",
-  phoneDisplay: "+91 7003889627",
   location: "Bangalore, India",
   availability: "Available for remote work",
 

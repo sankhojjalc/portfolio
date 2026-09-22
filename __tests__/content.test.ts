@@ -17,7 +17,6 @@ describe("content integrity", () => {
 
   it("has well-formed contact details", () => {
     expect(site.email).toMatch(/^[^@\s]+@[^@\s]+\.[^@\s]+$/);
-    expect(site.phone.replace(/\D/g, "")).toBe(site.phoneDisplay.replace(/\D/g, ""));
     expect(site.siteUrl).toMatch(/^https:\/\//);
   });
 
