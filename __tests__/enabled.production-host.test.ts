@@ -1,5 +1,5 @@
 /**
- * @jest-environment-options {"url": "https://sankhojjal-dev.web.app/"}
+ * @jest-environment-options {"url": "https://sankhojjalchatterjee.com/"}
  */
 import { isAnalyticsEnabled } from "@/lib/analytics/enabled";
 

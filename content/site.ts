@@ -8,7 +8,7 @@ export const site = {
   designations: ["AI Engineer", "LLM & GenAI Applications", "Full-Stack Developer"],
   careerStart: "2017-01-01",
 
-  siteUrl: "https://sankhojjal-dev.web.app",
+  siteUrl: "https://sankhojjalchatterjee.com",
   linkedInUrl: "https://www.linkedin.com/in/sankhojjalchatterjee",
   githubUrl: "https://github.com/sankhojjalc",
   twitterHandle: "@sankhojjalc",

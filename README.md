@@ -33,7 +33,7 @@ Deepening evaluation and observability practices for agentic systems in producti
 
 - **GitHub :** [sankhojjalc](https://github.com/sankhojjalc)
 - **LinkedIn :** [sankhojjalchatterjee](https://www.linkedin.com/in/sankhojjalchatterjee/)
-- **Portfolio:** [sankhojjal-dev.web.app](https://sankhojjal-dev.web.app/)
+- **Portfolio:** [sankhojjalchatterjee.com](https://sankhojjalchatterjee.com/)
 
 Feel free to reach out if you're interested in collaborating on AI products or simply want to chat about LLMs, RAG and agents. Let's build something great together! ✨
 
